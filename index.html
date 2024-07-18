@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/base.css">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/clock.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="./js/index.js" defer></script>
     <title>Parallax</title>
@@ -13,11 +14,24 @@
 
 <body>
     <div class="picBg1">
+        <div class="clock-container">
+            <div class="clock">
+                <div class="needle hour"></div>
+                <div class="needle minute"></div>
+                <div class="needle second"></div>
+                <div class="center-point"></div>
+            </div>
+            <div class="time"></div>
+            <div class="date"></div>
+        </div>
         <div class="ptext">
-            <div class="border animate__animated animate__fadeInBottomLeft animate__slower">Parallax Website</div>
+            <div class="border animate__animated animate__fadeInBottomLeft animate__slower">
+                Parallax Website
+            </div>
         </div>
     </div>
     <section class="section section-light">
+        <div></div>
         <h2>Section One</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vero incidunt eveniet! Hic fugit

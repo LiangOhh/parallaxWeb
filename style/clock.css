@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+  }
+  
+  html {
+    transition: all 0.5s ease-in;
+  }
+
+  .pucBg1{
+    position: relative;
+  }
+  .clock-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    /* font-family: 'Heebo', sans-serif; */
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    /* background-color: red; */
+  }  
+  .clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .needle {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65px;
+    width: 3px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in linear;
+  }
+  
+  .needle.hour {
+    height: 60px;
+    transform: translate(-50%, -100%) rotate(0deg);
+    background-color: green;
+  }
+  
+  .needle.minute {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 80px;
+   background-color:#002FA7;
+  }
+  
+  .needle.second {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    background-color: #e74c3c;
+  }
+  
+  .center-point {
+    background-color: #e74c3c;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
+  .center-point::after {
+    content: '';
+    background-color: var(--primary-color);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
+  .time {
+    margin-top: 15px;
+    font-size: 60px;
+    color: #e74c3c;
+    letter-spacing: 3px;
+  }
+  
+  .date {
+    color: #050303;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    
+  }
+  
+  .date .circle {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    transition: all 0.5s ease-in;
+    font-size: 12px;
+  }

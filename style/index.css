@@ -1,5 +1,5 @@
 .picBg1 {
-  background-image: url('https://raw.githubusercontent.com/LiangOhh/MyPic/master/good/pic202407190125646.jpg');
+  background-image: url('../img/01.jpg');
   min-height: 100%;
 }
 .picBg2 {
@@ -73,9 +73,13 @@
   }
 }
 @media (max-width: 568px) {
-  .picBg1,
-  .picBg2,
-  .picBg3 {
-    background-attachment: fixed;
+  /* 
+    .picBg1,
+    .picBg2,
+    .picBg3 {
+        background-attachment: fixed;
+    } */
+  .picBg1 .ptext {
+    top: 80%;
   }
 }

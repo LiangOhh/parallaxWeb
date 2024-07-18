@@ -1,6 +1,7 @@
 .picBg1 {
   background-image: url('https://raw.githubusercontent.com/LiangOhh/MyPic/master/good/pic202407190125646.jpg');
   min-height: 100%;
+  /* animation: fadeIn 2s ease-in-out ; */
 }
 .picBg2 {
   background-image: url('https://raw.githubusercontent.com/LiangOhh/MyPic/master/good/pic202407190125647.jpg');
@@ -19,7 +20,7 @@
 .picBg3,
 .picBg4 {
   position: relative;
-  opacity: 0.7;
+  opacity: 0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,6 +73,27 @@
     font-size: larger;
   }
 }
+@keyframes showLastText {
+  0% {
+    opacity: 0;
+  }
+  25%{
+    opacity: .5;
+    font-size: medium;
+  }
+  50%{
+    opacity: 1;
+    font-size: large;
+  }
+  75% {
+    opacity: .5;
+    font-size: small;
+  }
+  100%{
+    opacity: 0;
+  } 
+}
+
 @media (max-width: 568px) {
   /* 
     .picBg1,
@@ -83,3 +105,12 @@
     top: 80%;
   }
 }
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: .7;
+  }
+}
+

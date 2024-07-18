@@ -1,0 +1,81 @@
+.picBg1 {
+  background-image: url('../img/01.jpg');
+  min-height: 100%;
+}
+.picBg2 {
+  background-image: url('https://raw.githubusercontent.com/LiangOhh/MyPic/master/good/pic202407190125647.jpg');
+  min-height: 400px;
+}
+.picBg3 {
+  background-image: url('https://raw.githubusercontent.com/LiangOhh/MyPic/master/good/pic202407190125645.jpg');
+  min-height: 400px;
+}
+.picBg4 {
+  background-image: url('https://raw.githubusercontent.com/LiangOhh/MyPic/master/good/pic202407190125648.jpg');
+  min-height: 100%;
+}
+.picBg1,
+.picBg2,
+.picBg3,
+.picBg4 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.section {
+  text-align: center;
+  padding: 30px 80px;
+}
+.section p {
+  margin-top: 10px;
+  text-indent: 2em;
+}
+.section-light {
+  background-color: #f4f4f4cc;
+  color: #666;
+}
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.border {
+  opacity: 0;
+  color: #fff;
+  padding: 20px;
+  animation: showText 1s linear 1s forwards;
+  --animate-delay: 1s;
+}
+.borderlast {
+  opacity: 0;
+  color: #fff;
+  padding: 20px;
+}
+@keyframes showText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    font-size: larger;
+  }
+}
+@media (max-width: 568px) {
+  .picBg1,
+  .picBg2,
+  .picBg3 {
+    background-attachment: fixed;
+  }
+}
